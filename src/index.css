@@ -1,3 +1,111 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+button:active {
+    transform: scale(0.98);
+  }
+  .menu-slide {
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+  }
+  
+  .menu-slide-open {
+    transform: translateX(0);
+  }
+  
+  /* Animação de fadeIn para os elementos */
+@keyframes fadeIn {
+    from {
+      opacity: 0.6;
+    }
+    to {
+      opacity: 0.7;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animação de zoom no título */
+  @keyframes titleZoom {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Aplicando as animações */
+  .animate-fadeIn {
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  .animate-fadeInUp {
+    animation: fadeInUp 1s ease-in-out forwards;
+  }
+  
+  .animate-titleZoom {
+    animation: titleZoom 1s ease-out forwards;
+  }
+  /* Animação de fadeIn */
+/* Animação de Slide In */
+@keyframes slideIn {
+    0% {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Aplicando a animação slideIn */
+  .animate-slideIn {
+    animation: slideIn 1s ease forwards;
+  }
+  
+  /* Animação de Fade In (opcional para o botão) */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 0.7;
+    }
+  }
+  
+  /* Aplicando a animação fadeIn */
+  .animate-fadeIn {
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  /* Animação de Slide In */
+@keyframes slideIn {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Aplicando a animação slideIn */
+  .animate-slideIn {
+    animation: slideIn 1s ease forwards;
+  }
+  
