@@ -9,6 +9,7 @@ Este é o front-end do projeto de simulados, desenvolvido com React. A aplicaç�
 - **React Query**: Gerenciamento de estado assíncrono para chamadas de API.
 - **Tailwind CSS**: Framework CSS para estilização rápida e responsiva.
 - **Lucide React**: Ícones para melhorar a UI.
+- **Vite**
 
 ## Estrutura do Projeto
 
